@@ -1,0 +1,15 @@
+# DNS Key and Secret
+# ##################################################
+# 填写阿里云的AccessKey ID及AccessKey Secret
+# 	如何申请见https://help.aliyun.com/knowledge_detail/38738.html
+# 填写腾讯云的SecretId及SecretKey
+# 	如何申请见https://console.cloud.tencent.com/cam/capi
+# GoDaddy的SecretId及SecretKey
+# 	如何申请见https://developer.godaddy.com/getstarted
+# ##################################################
+# dns.cfg file format
+# key=xxx
+# secret=xxxx
+
+key=
+secret=
