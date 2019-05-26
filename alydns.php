@@ -51,7 +51,7 @@ if (count($argv) < 7) {
     echo "参数有误\n";
     exit;
 }
-echo $argv[1] . "-" . $argv[2] . "-" . $argv[3] . "-" . $argv[4] . "-" . $argv[5] . "-" . $argv[6] . "\n";
+error_log("参数：".$argv[1] . "-" . $argv[2] . "-" . $argv[3] . "-" . $argv[4] . "-" . $argv[5] . "-" . $argv[6] . "\n");
 
 $domainarray = AliDns::getDomain($argv[2]);
 $selfdomain = ($domainarray[0] == "") ? $argv[3] : $argv[3] . "." . $domainarray[0];
