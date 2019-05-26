@@ -19,9 +19,9 @@ secret=`awk -F"=" '/^secret/ {print $2}' $CFG`
 # 第二个参数：使用的 DNS 云厂商 aly|txy|godaddy
 # 第三个参数：添加或者清除 add|clean
 plang=$1 #python or php 
-pdns=$2 #aly or txy
+pdns=$2 #aly or txy or godaddy
 paction=$3 #add or clean
-[ -z "$plang" -o -z "$pdns" -o -z "$paction" ] && echo "Syntax: $0 python|php aly|txy add|clean" && exit 0
+[ -z "$plang" -o -z "$pdns" -o -z "$paction" ] && echo "Syntax: $0 python|php aly|txy|godaddy add|clean" && exit 0
 
 cmd=`/usr/bin/which ${plang}`
 [ -z "${cmd}" ] && echo "${cmd} not found! Auto update certificate failed." && exit 1
